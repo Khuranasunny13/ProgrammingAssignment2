@@ -1,5 +1,6 @@
 ## Put comments here that give an overall description of what your
-## functions do
+## Matrix inversion is usually a costly computation and 
+## there may be some benefit to caching the inverse of a matrix rather than compute it repeatedly.
 
 ## Write a short comment describing this function
 
@@ -19,6 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
+#This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.  
+#It first checks if the inverse has already been computed. If so, it gets the result and skips the
+#computation. If not, it computes the inverse, sets the value in the cache via setinverse function
 
 ## Write a short comment describing this function
 
